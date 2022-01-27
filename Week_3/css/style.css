@@ -56,6 +56,9 @@ main h2 {
 }
 footer {
   background-color: #3d405b;
+  text-align: center;
+  color: #f2cc8f;
+  padding: 20px 0px 20px 40px;
 }
 footer p {
   padding: 1em;

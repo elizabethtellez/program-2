@@ -1,0 +1,23 @@
+@media only screen and (min-width: 35rem) {
+  nav button {
+    display: none;
+  }
+  nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  div.spotlight_box {
+    height: 200px;
+    display: flex;
+  }
+  div.spotlight {
+    width: 58%;
+    height: 100%;
+    margin: 0 1%;
+  }
+}

@@ -1,28 +1,36 @@
-const list = document.getElementById("list");
-const addChapter = document.getElementById("submit");
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function () {
+    var div = this.parentElement;
+    div.style.display = "none";
+  };
+}
 
-addChapter.addEventListener("click", function () {
-  let chapter = document.querySelector("#input");
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === "") {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
 
-  const book_chapter = document.createElement("div");
-  const del = document.createElement("button");
-  const content = document.createElement("div");
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("❌");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
 
-  content.classList.add("content");
-  list.appendChild(content);
-
-  book_chapter.classList.add("object");
-  book_chapter.innerHTML = chapter.value;
-  content.appendChild(book_chapter);
-
-  del.setAttribute("id", "delete");
-  del.classList.add(num);
-  del.innerHTML = "❌";
-  content.appendChild(del);
-});
-
-/*const removeChapter = document.getElementById("delete");
-
-removeChapter.addEventListener("click", () {
-    const
-});*/
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      var div = this.parentElement;
+      div.style.display = "none";
+    };
+  }
+}

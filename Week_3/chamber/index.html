@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css - Copy/normalize.css">
-    <link rel="stylesheet" href="css - Copy/small.css">
-    <link rel="stylesheet" href="css - Copy/medium.css">
-    <link rel="stylesheet" href="css - Copy/larger.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/larger.css">
     <title>Preston 4</title>
 </head>
 <body>
     <header>
         <div class="nav_logo">
-            <img src="images - Copy/logo.png" alt="logo" class="logo">
+            <img src="images/logo.png" alt="logo" class="logo">
             <div class="content_header">
                 <h1>Chamber of Commerce</h2>
                 <p>Otay Chamber of Commerce</p>
@@ -37,13 +37,15 @@
         <div class="content">
             <h2 class="main_header">Preston 4</h2>
             <div class="main_content_box">
-                <div class="content_box">Hero Image/Weather summary</div>
-                <div class="content_box">5 day forecast</div>
-                <div class="content_box">Article</div>
-                <div class="content_box">Contact information</div>
-                <div class="content_box spotlight_box">
+                <div class="content_box" id="hero">Hero Image/Weather summary</div>
+                <div class="content_box" id="forecast">5 day forecast</div>
+                <div class="content_box" id="article">Article</div>
+                <div class="content_box" id="information">Contact information</div>
+                <div class="content_box extra" id="join">Join</div>
+                <div class="content_box spotlight_box" id="spotlight">
                     <div class="spotlight1 spotlight">Spotlight1</div>
                     <div class="spotlight2 spotlight">Spotlight2</div>
+                    <div class="spotlight3 spotlight extra">Spotlight</div>
                 </div>
             </div>
         </div>
@@ -51,11 +53,29 @@
 
     
     <footer>
-        &copy;
-        <span id="currentyear">2022</span>
-        Elizabeth Tellez | Tijuana
+        <div class="content_box " id="footer_content_box">
+            <img src="../chamber/images/logo.png" alt="favicon" class="foot_img">
+            <div class="footer_top">
+                <div class="foot_content">
+                    <div class="left_side">
+                        <h3>Otay Chamber</h3>
+                        <h4>Santa Julia 30</h4>
+                    </div>
+                    <div class="right_side">
+                        <p>elizabeth@gmail.com</p>
+                        <p>+(1)9999-999</p>
+                        <p>Location Map</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="foot_bot">
+                &copy;
+                <span id="currentyear">2022</span>
+                Elizabeth Tellez | Tijuana
+                </div>
+                <span id="lastmod"> </span>
+            </div>
         </div>
-        <span id="lastmod"> </span>
     </footer>
     <script src="js/scripts.js"></script>
 </body>

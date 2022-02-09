@@ -1,2 +1,2 @@
-const lastmod = document.querySelector('#lastmod');
-lastmod.innerHTML = `<em>The page was last updated on: ${document.lastModified}</em`;
+const lastmod = document.querySelector("#lastmod");
+lastmod.innerHTML = `<em> Last Modification: ${document.lastModified}</em`;

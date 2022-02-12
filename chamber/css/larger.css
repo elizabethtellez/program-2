@@ -6,6 +6,21 @@
   #primaryNav {
     height: 50px;
   }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    border: none;
+    font-size: larger;
+  }
+
   .navbar_list {
     display: flex;
     justify-content: center;
@@ -92,5 +107,37 @@
   .foot_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  div.nav_main {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+  }
+
+  .content_header {
+    grid-column: 1/2;
+    display: grid;
+  }
+
+  .social_media {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  .navbar {
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header_content_2 h1,
+  .content_header p {
+    font-size: x-large;
+  }
+  .social_media > a {
+    height: 40px;
+  }
+  .date > em {
+    font-size: larger;
   }
 }

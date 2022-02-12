@@ -1,5 +1,5 @@
 @media only screen and (min-width: 35rem) {
-  nav button {
+  /*nav button {
     display: none;
   }
   nav ul#primaryNav {
@@ -10,7 +10,7 @@
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-  }
+  }*/
   div.spotlight_box {
     height: 200px;
     display: flex;
@@ -40,5 +40,18 @@
     justify-content: center;
     margin: 10px;
     padding-top: 10px;
+  }
+  .header_content_2 {
+    text-align: left;
+  }
+  .white {
+    background-color: white;
+    border: 1px solid black;
+  }
+  .no_border {
+    border: none;
+  }
+  li.navbar_list > a {
+    color: black;
   }
 }

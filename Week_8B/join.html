@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Week_5B/css/normalize.css">
+    <link rel="stylesheet" href="../Week_5B/css/larger.css">
+    <link rel="stylesheet" href="../Week_5B/css/medium.css">
+    <link rel="stylesheet" href="../Week_5B/css/small.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="content">
+        <header>
+            <div class="nav_logo">
+                <img src="/Week_5B/img/logo.png" alt="logo" class="logo">
+                <div class="content_header">
+                    <h1>Chamber of Commerce</h2>
+                    <p>Shaver Lake Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav class="navbar">
+                <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li class="navbar_list"><a href="#">Home</a></li>
+                    <li class="navbar_list active"><a href="#">Chamber of commerce</a></li>
+                    <li class="navbar_list"><a href="../Week_8B/join.html">Membership Application Form</a></li>
+                    <li class="navbar_list"><a href="#">Highlights</a></li>
+                    <li class="navbar_list"><a href="../Week_7B/discover.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <form action="thankyou.html" method="get">
+            <div class="firstName typeText">
+              <label for="firstName">Enter First Name:</label>
+              <input name="firstName" required type="text">
+            </div>
+
+            <div class="lastName typeText">
+              <label for="secondName">Enter Last Name:</label>
+              <input name="secondName" required type="text">
+            </div>
+
+            <div class="businessPosition typeText">
+              <label for="BusinessPosition">Enter your business position title</label>
+              <input name="BusinessPosition" type="text">
+            </div>
+
+            <div class="email typeText">
+              <label for="email">Email:</label>
+              <input class="email" required type="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="cellphoneNumber typeText">
+              <label for="cellphone">Cellphone Number(required):</label>
+              <input type="tel" required name="cellphone" class="cellphone" id="cellphone">
+            </div>
+
+            <div class="businessName typeText">
+              <label for="businessName">Business Name/Title: </label>
+              <input type="text" required name="businessName" id="businessName">
+            </div>
+
+            <h2>Choose a Membership level</h2>
+            <div class="radio1 radioOption">
+              <input type="radio" name="Membership" id="NPMembership">
+              <label for="NPMembership">NP Membership is for non profit organizations and there is no fee.</label>
+            </div>
+            <div class="radio2 radioOption">
+              <input type="radio" name="Membership" id="bronzeMembership">
+              <label for="bronzeMembership">Bronze Membership.</label>
+            </div>
+            <div class="radio3 radioOption">
+              <input type="radio" name="Membership" id="silverMembership">
+              <label for="silverMembership">Silver Membership.</label>
+            </div>
+            <div class="radio4 radioOption">
+              <input type="radio" name="Membership" id="goldMembership">
+              <label for="goldMembership">Gold Membership</label>
+            </div>
+
+            <div class="hiddenField">
+              <input type="hidden" name="hiddenField" id="hiddenField" value="date">
+            </div>
+            <div class="textArea">
+              <label for="desription">Enter a small description of your Business:</label>
+              <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="submit">
+              <label for="submit">Click to Submit</label>
+              <input type="submit" name="submit" value="SUBMIT">
+            </div>
+          </form>
+        </main>
+    </div>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../Week_8B/script.js"></script>
+  </body>
+</html>

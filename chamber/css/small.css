@@ -180,3 +180,37 @@ div.spotlight_box {
 h1 {
   font-size: x-large;
 }
+
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+#forecast img {
+  display: flex;
+  justify-self: center;
+}
+#forecast p,
+#forecast h3,
+#forecast h4 {
+  text-align: center;
+}
+#forecast :nth-child(1) {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+#forecast :nth-child(2) {
+  grid-row: 2/3;
+}
+#forecast :nth-child(3) {
+  grid-row: 3/4;
+}
+#forecast :nth-child(4) {
+  grid-row: 1/2;
+}
+#forecast :nth-child(5) {
+  grid-row: 2/3;
+}
+#forecast :nth-child(6) {
+  grid-row: 3/4;
+}
